@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Weather Plots</title>
+   
+      <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+             <!-- Here comes the rest of the code -->
+
+             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+            <link href="css/style.css" rel="stylesheet">
+   <style> 
+   body {background-image: url('teal_blue.jpg')}
+  </style>
+   </head>
+   
+   <body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+          
+            <a href="WEB_VISUALIZATION.HTML" >Home <span class="sr-only">(current)</span></a>
+         
+          &nbsp;
+            <a href="Comparison.html" href="#">Comparison
+
+            </a>
+          
+          
+          
+          
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="Max Temp.html" >Max Temp</a>
+
+              <a href="Humidity.html" >Humidity</a>
+              <div class="dropdown-divider"></div>
+              <a href="Cloudiness.html" >Cloudiness</a>
+              <a href="Wind Speed.html" >Wind Speed</a>
+            </div>
+          
+         
+            <a href="data.html" tabindex="-1" aria-disabled="true">Data</a>
+         &nbsp;
+        <div>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          
+        </form>
+      </div>
+      </div>
+    </nav>
+
+   
+   
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+              <h1 class="h1-responsive font-weight-bold mt-sm-5">Weather Layout </h1>
+              <hr class="hr-light">
+              <h6 class="mb-4">The purpose of this project was to analyze weather data and its changes as you get closer to the equator. Analyzing this data we used OpenWeatherMap API which gave a 500 city data set. MatPlotLib was used to plot the various comparisons with Latitude. The comparisons that were looked at were Max Temp, Cloudiness, Humidity and Wind Speed.
+              This website includes visualiztions, data sets and descriptions of each plot.
+             </h6>
+             
+        
+             <div class="wrapper">
+              <!-- Sidebar  -->
+              <nav id="sidebar">
+                  <div class="sidebar-header">
+                      
+                  </div>
+          
+                  <ul class="list-unstyled components">
+                      <li class="active">
+                          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                              <i class="fas fa-home"></i>
+                              Pages
+                          </a>
+                          <ul class="collapse list-unstyled" id="homeSubmenu">
+                              <li>
+                                  <a href="Comparison.html">comparison</a>
+                              </li>
+                              <li>
+                                  <a href="Data.html">Data</a>
+                              </li>
+                              
+                              </li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="#">
+                           
+                          </a>
+                          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                              <i class="fas fa-copy"></i>
+                              Plots
+                          </a>
+                          <ul class="collapse list-unstyled" id="pageSubmenu">
+                              <li>
+                                  <a href="Max Temp.html" > Max Temp
+                                    <img class="card-img-thumbnail" src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\Resources\assets\images\Fig1.png" alt="Max Temp Vs Latitude">
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="Humidity.html">Humidity</a>
+                              </li>
+                              <li>
+                                  <a href="Cloudiness.html">Cloudiness</a>
+                              <li>
+                                    <a href="Wind Speed.html">Wind Speed</a>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+          
+              </nav>
+          
+              <!-- Page Content  -->
+              <div id="content">
+          
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                      <div class="container-fluid">
+          
+
+                      </div>
+                  </nav>
+              </div>
+          </div>
+
+
+
+
+
+
+<section id="Visualization" class="container">
+  
+
+    <h2 class="display-4 text-center mt-5 mb-3";>Visualization
+      <container {
+        font-size: 33px;
+    }>
+    </h2>
+    <img class="card-img-top" src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\Resources\assets\images\Fig1.png" alt="Max Temp Vs Latitude">
+             <div class="card-body">
+               <img class="card-img-top" src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\Resources\assets\images\Fig2.png" alt="Latitude vs Humidity">
+               <div class="card-body">
+               </div> 
+               <img class="card-img-top" src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\Resources\assets\images\Fig3.png" alt="Cloudiness">
+               <div class="card-body">   
+               <img class="card-img-top" src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\Resources\assets\images\Fig4.png" alt="Wind Speed">
+       
+            </div>
+   
+         </div>
+    </div>
+ </section>
+</body>
+ </html>
+
+
+
+ 
