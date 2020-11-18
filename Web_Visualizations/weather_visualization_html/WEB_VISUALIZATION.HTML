@@ -15,160 +15,173 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
             <link href="css/style.css" rel="stylesheet">
    <style> 
-   body {background-image: url('teal_blue.jpg')}
+   body {background-image: url('gray.jpg')}
+  
+        } 
   </style>
-   </head>
-   
-   <body>
-  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-     
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        
-          
-            <a href="WEB_VISUALIZATION.HTML" >Home <span class="sr-only">(current)</span></a>
-         
-          &nbsp;
-            <a href="Comparison.html" href="#">Comparison
 
-            </a>
-          
-          
-          
-          
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<!-- Sidebar  -->
+<nav id="sidebar">
+  <div class="sidebar-header">
+      
+  </div>
+  
+  <sidebar> 
+    <position: absolute>
+    <right: 0>
+  
+  
+  <wrap> 
+    <position: relative>
+    <min-height: 100%>
+  
+  
+  <ul class="list-unstyled components">
+      <li class="active">
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+              <i class="fas fa-home"></i>
+              Pages
+          </a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li>
+                  <a href="Comparison.html">Comparison</a>
+              </li>
+              <li>
+                  <a href="Data.html">Data</a>
+              </li>
+              
+              </li>
+          </ul>
+      </li>
+      <li>
+          <a href="#">
+           
+          </a>
+          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+              <i class="fas fa-copy"></i>
               Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a href="Max Temp.html" >Max Temp</a>
-
-              <a href="Humidity.html" >Humidity</a>
-              <div class="dropdown-divider"></div>
-              <a href="Cloudiness.html" >Cloudiness</a>
-              <a href="Wind Speed.html" >Wind Speed</a>
-            </div>
-          
-         
-            <a href="data.html" tabindex="-1" aria-disabled="true">Data</a>
-         &nbsp;
-        <div>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          
-        </form>
-      </div>
-      </div>
-    </nav>
-
-   
-   
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
-              <h1 class="h1-responsive font-weight-bold mt-sm-5">Weather Layout </h1>
-              <hr class="hr-light">
-              <h6 class="mb-4">The purpose of this project was to analyze weather data and its changes as you get closer to the equator. Analyzing this data we used OpenWeatherMap API which gave a 500 city data set. MatPlotLib was used to plot the various comparisons with Latitude. The comparisons that were looked at were Max Temp, Cloudiness, Humidity and Wind Speed.
-              This website includes visualiztions, data sets and descriptions of each plot.
-             </h6>
+          </a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+           
+            &nbsp 
+            <li>
+                  <a href="Max Temp.html" > Max Temp </a>
+                    <a href="Max Temp.html" ><img width=100 src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\Resources\assets\images\Fig1.png" alt="Max temp" >
+                  </a>
+              </li>
              
-        
-             <div class="wrapper">
-              <!-- Sidebar  -->
-              <nav id="sidebar">
-                  <div class="sidebar-header">
-                      
-                  </div>
-          
-                  <ul class="list-unstyled components">
-                      <li class="active">
-                          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                              <i class="fas fa-home"></i>
-                              Pages
-                          </a>
-                          <ul class="collapse list-unstyled" id="homeSubmenu">
-                              <li>
-                                  <a href="Comparison.html">comparison</a>
-                              </li>
-                              <li>
-                                  <a href="Data.html">Data</a>
-                              </li>
-                              
-                              </li>
-                          </ul>
-                      </li>
-                      <li>
-                          <a href="#">
-                           
-                          </a>
-                          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                              <i class="fas fa-copy"></i>
-                              Plots
-                          </a>
-                          <ul class="collapse list-unstyled" id="pageSubmenu">
-                              <li>
-                                  <a href="Max Temp.html" > Max Temp
-                                    <img class="card-img-thumbnail" src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\Resources\assets\images\Fig1.png" alt="Max Temp Vs Latitude">
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="Humidity.html">Humidity</a>
-                              </li>
-                              <li>
-                                  <a href="Cloudiness.html">Cloudiness</a>
-                              <li>
-                                    <a href="Wind Speed.html">Wind Speed</a>
-                              </li>
-                          </ul>
-                      </li>
-                  </ul>
-          
-              </nav>
-          
-              <!-- Page Content  -->
-              <div id="content">
-          
-                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                      <div class="container-fluid">
-          
-
-                      </div>
-                  </nav>
-              </div>
-          </div>
-
-
-
-
-
-
-<section id="Visualization" class="container">
+              &nbsp
+              <li>
+                  <a href="Humidity.html">Humidity</a>
+                    <a href="Humidity.html" ><img width=100 src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\Resources\assets\images\Fig2.png" alt="Humidity" >
+                  </a>
+              </li>
+              
+              &nbsp
+              <li>
+                  <a href="Cloudiness.html">Cloudiness</a>
+                  <a href="Cloudiness.html" ><img width=100 src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\Resources\assets\images\Fig3.png" alt="Cloudiness" >
+                  </a>
+              <li>
+                
+                <div></div>
+                    <a href="Wind Speed.html">Wind Speed</a>
+                      <a href="Wind Speed.html" ><img width=100 src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\Resources\assets\images\Fig4.png" alt="Wind Speed" >
+                      </a>
+              
+                    
+                    &nbsp
+                        
+              </li>
+          </ul>
+      </li>
+  </ul>
   
+  </nav>
+     </head>
+    </sidebar>
+    </sidebar>
+  </position:>
+  </wrap>
+  </right:>
+  </position:>   
 
-    <h2 class="display-4 text-center mt-5 mb-3";>Visualization
-      <container {
-        font-size: 33px;
-    }>
-    </h2>
-   
-    <div class="row">
-        <div class="col-md-6">
-          <div class="thumbnail">
-            <table>
-          <tr><td><img width=500 src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\Resources\assets\images\Fig1.png" alt="Max Temp Vs Latitude"></td>  
-          <td> <img width=500 src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\Resources\assets\images\Fig2.png" alt="Latitude vs Humidity"></td></tr>
-            <tr><td> <img width=500 src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\Resources\assets\images\Fig3.png" alt="Cloudiness"> </td>
-            <td> <img width=500 src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\Resources\assets\images\Fig4.png" alt="Wind Speed"></td></tr>
-            </table>
-   
-         </div>
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+        
+          <a href="WEB_VISUALIZATION.HTML" >Home <span class="sr-only">(current)</span></a>
+       
+        &nbsp;
+          <a href="Comparison.html" href="#">Comparison
+
+          </a>
+        
+        
+        
+        
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a href="Max Temp.html" >Max Temp</a>
+
+            <a href="Humidity.html" >Humidity</a>
+            <div class="dropdown-divider"></div>
+            <a href="Cloudiness.html" >Cloudiness</a>
+            <a href="Wind Speed.html" >Wind Speed</a>
+          </div>
+        
+       
+          <a href="data.html" tabindex="-1" aria-disabled="true">Data</a>
+       &nbsp;
+      <div>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        
+      </form>
     </div>
- </section>
+    </div>
+  </nav>
+<!--Grid row-->
+<div class="row">
+<!--Grid column-->
+
+
+<body>
+
+ 
+    
+    
+&nbsp
+<div></div>
+  
+  <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+    <h1 class="h1-responsive font-weight-bold mt-sm-5">Weather Layout </h1>
+    <hr class="hr-light">
+    <h6 class="mb-4">The purpose of this project was to analyze weather data and its changes as you get closer to the equator. Analyzing this data we used OpenWeatherMap API which gave a 500 city data set. MatPlotLib was used to plot the various comparisons with Latitude. The comparisons that were looked at were Max Temp, Cloudiness, Humidity and Wind Speed.
+    This website includes visualiztions, data sets and descriptions of each plot.
+   </h6>
+    <div class="wrapper">
+     
+  
+     
+    
+    <img class="card-img-top" src="C:\Users\pasi1\UNC_homework\Web-Design-Challenge\Web_Visualizations\weather_visualization_html\weather.JPG" >
+           
+               
+           
+  
 </body>
  </html>
 
